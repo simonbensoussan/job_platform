@@ -9,5 +9,6 @@ class SignUpForm(forms.ModelForm):
 
 class EmailForm(forms.Form):
     # tester si ca marche email field
+    # add a comment test
     email = forms.EmailField()
     username = forms.CharField(max_length=254)
