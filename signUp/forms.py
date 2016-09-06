@@ -7,8 +7,8 @@ class SignUpForm(forms.ModelForm):
         model = SignUp
         fields = ['username','email']
 
+
+# Second way to build a form :
 class EmailForm(forms.Form):
-    # tester si ca marche email field
-    # add 1234
     email = forms.EmailField()
     username = forms.CharField(max_length=254)

@@ -5,7 +5,8 @@ from .forms import SignUpForm
 
 class SignUpAdmin(admin.ModelAdmin):
     list_display = ['username','email','date','updated']
-  #  form = SignUpForm
+    form = SignUpForm
+
     class Meta:
         model = SignUp
 
